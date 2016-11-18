@@ -21,7 +21,6 @@
   <link href='//fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
   
-  <link href="v/vspfiles/templates/247/css/imports.css" rel="stylesheet">
   <div id="if_homepage"><link href="v/vspfiles/templates/247/css/homepage.css" rel="stylesheet"></div>
  
   <script src="v/vspfiles/templates/247/js/design-toolkit_min.js"></script>
@@ -33,9 +32,11 @@
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <link href="v/vspfiles/templates/247/css/imports.css" rel="stylesheet">
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+  
   <script>DTK.loadCSS("247");</script> <!-- FOR CHECKOUT -->
  
 </head>
@@ -89,15 +90,13 @@ E.G. <div class="pageWrapper leftNavOn">
   
     <!-- ==================== UL LAYOUT ==================== -->
 	
-    <div id="topWrap">
       <!--<div id="topNav" class="clear">-->
-	  <nav class="navbar navbar-default">
-		<div class="container-fluid">
+	  <nav class="navbar navbar-default" role="navigation">
+		<div class="collapse navbar-collapse">
 		<!--For our navbar ref..send to homepage-->
 			<a class="navbar-brand" href="#">FMBE</a>
-			<ul class="nav nav-pills">
 				<li class="dropdown">
-					<a href="###" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
+					<a href="###" data-toggle="dropdown" class="dropdown-toggle">About Us</b></a>
 						<ul class="dropdown-menu" id="menu1">
 							<li class="dropdown-submenu">
 								<a href="#">Our Customers</a>
@@ -108,7 +107,7 @@ E.G. <div class="pageWrapper leftNavOn">
 							</li>
 						</ul>	
 				</li>
-				<li>Wholesale Bakeries</li>
+				<li class="dropdown">Wholesale Bakeries</li>
 				<li>Retail Bakeries</li>
 				<li>Racks &amp; Tables</li>
 			</ul>
@@ -116,7 +115,6 @@ E.G. <div class="pageWrapper leftNavOn">
       <!--</div> #top_nav -->
 		</nav><!--End our nav bar-->
 	  </div><!--End our fluid container-->
-    </div>
   </div><!-- #headerWrap -->
 
     <!-- ==================== CONTENT ==================== -->
