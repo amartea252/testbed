@@ -90,32 +90,41 @@ E.G. <div class="pageWrapper leftNavOn">
   
     <!-- ==================== UL LAYOUT ==================== -->
 	
-      <!--<div id="topNav" class="clear">-->
-	  <nav class="navbar navbar-default" role="navigation">
-		<div class="collapse navbar-collapse">
-		<!--For our navbar ref..send to homepage-->
-			<a class="navbar-brand" href="#">FMBE</a>
+      <nav class="navbar navbar-default" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="###">FMBE</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+				<ul class="nav navbar-nav">
 				<li class="dropdown">
-					<a href="###" data-toggle="dropdown" class="dropdown-toggle">About Us</b></a>
-						<ul class="dropdown-menu" id="menu1">
-							<li class="dropdown-submenu">
-								<a href="#">Our Customers</a>
-									<ul class="dropdown-menu">
-										<li><a href="#">LBC Users</a></li>
-										<li><a href="#">Wire Transfer Info</a></li>
-									</ul>
-							</li>
-						</ul>	
-				</li>
-				<li class="dropdown">Wholesale Bakeries</li>
-				<li>Retail Bakeries</li>
-				<li>Racks &amp; Tables</li>
-			</ul>
-        <div id="display_menu_1" class="menu"></div>
-      <!--</div> #top_nav -->
-		</nav><!--End our nav bar-->
-	  </div><!--End our fluid container-->
-  </div><!-- #headerWrap -->
+						<a href="###" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">About Us<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="###">Our Customers</a></li>
+							<li><a href="###">Our Services</a></li>
+							<li class="divider"></li>
+							<li><a href="###">Contact Us</a></li>
+						</ul>
+					</li>
+					<li><a href="###">Wholesale Bakeries</a></li>
+					
+				</ul>
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div><!-- /.navbar-collapse -->
+		</nav>
 
     <!-- ==================== CONTENT ==================== -->
     <div id="contentWrap" class="clear">
