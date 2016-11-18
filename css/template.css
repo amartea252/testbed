@@ -763,3 +763,13 @@ section {
 #please_wait_div img {
   float: none;
 }
+
+
+/******************/
+/*Custom Bootstrap*/
+/******************/
+.navbar{
+
+	margin:auto;
+	width:800px;
+}

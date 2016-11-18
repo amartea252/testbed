@@ -1,3 +1,8 @@
 /*Starts our custom bootstrap stuff*/
 
 /*Modify navbar*/
+
+.navbar{
+
+	margin-left: -20px;
+}
