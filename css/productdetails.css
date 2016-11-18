@@ -1,0 +1,513 @@
+/* PRODUCT PAGE */
+td.vCSS_breadcrumb_td,
+td.vCSS_breadcrumb_td b {
+	color:#666666;
+}
+
+
+/* ------ BREADCRUMBS ------ */
+td.vCSS_breadcrumb_td a {
+	color: #666666;
+	font-weight: normal !important;
+}
+
+/* ------ PRODUCT TITLE ------ */
+font.productnamecolorLARGE.colors_productname {
+	display: block;
+	color: #666666;
+	font-size: 24px;
+	font-weight: 700;
+	margin: 7px 0 0 5px;
+}
+
+/* ------ GENERAL PRICEBOX STYLES ------ */
+
+.colors_pricebox {
+	background: #f5f5f5;
+	border-radius: 0;
+	padding: 0 0 15px 0;
+	margin-bottom: 15px;
+}
+
+/*Select and input borders*/
+.colors_pricebox select td, 
+.colors_pricebox input td {
+	border: 1px solid #999;
+}
+
+/* ------ FIRST PRICEBOX ------ */
+
+span + .colors_pricebox {
+	padding: 15px;
+	margin-bottom: 0;
+}
+
+/*Text styling*/
+span + .colors_pricebox td {
+	color: #666666;
+	font-size: 12px;
+}
+
+/*Product Code*/
+span.product_code_title, 
+span.product_code {
+	color: #666666;
+	font-size: 12px;
+	font-style: normal;
+}
+
+/*--- PRICES ---*/
+
+/*List Price and Text Only*/
+.colors_pricebox td > font.text.colors_text:first-child b {
+	color: #666666;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+#options_table,
+#options_table + table,
+#options_table + script + br + table {
+	padding-left: 15px;
+}
+
+/*Our Price text*/
+.colors_pricebox font.text.colors_text b span,
+.colors_pricebox font.text.colors_text b {
+	color: #666666 !important;
+	font-size: 14px;
+	font-weight: normal !important;
+}
+/*Our Price price*/
+.colors_pricebox font.text.colors_text {
+	color: #666666;
+	font-size: 14px;
+}
+
+/*Sale Price & Text Only*/
+b font.pricecolor.colors_productprice {
+	color: #666666;
+	font-size: 15px;
+	font-weight: bold;
+}
+/*You Save text & price*/
+font.productnamecolor.colors_productname i,
+font.productnamecolor.colors_productname i b,
+font.productnamecolor.colors_productname i span {
+	color: #666666;
+	font-size: 11px;
+	font-weight: normal !important;
+	font-style: italic !important;
+}
+
+/* ------ SECOND PRICEBOX ------ */
+
+/* 2nd Pricebox Container */
+br + .colors_pricebox {	
+	background: #f5f5f5;
+	margin-top: 35px; /*Make same as height of heading*/
+	position: relative;
+}
+
+/* Heading */
+br + .colors_pricebox > tbody > tr > td > table > tbody > tr:first-child > td:first-child:before {
+	background: #8c8c8c url(../images/template/stripe.png) repeat 0 0; /*Overrides default*/
+	bottom: 100%;
+	color: #eee;
+	content: "Choose your options:"; /*Text to be displayed*/
+	display: block;
+	font-size: 14px;
+	font-weight: normal;
+	left: 0;
+	line-height: 35px; /*Adjust height*/
+	position: absolute;
+	text-indent: 18px;
+	width: 100%;
+}
+
+/* Hides original heading image */
+.colors_pricebox img[src$="Options_Text_Choose.gif"] {display: none;}
+
+/*Heading - remove this if you need the corner images*/
+img[src*="OBox_Border_Left_Top_Opt.gif"], img[src*="OBox_Border_Right_Top_Opt.gif"] {display: none;}
+img[src*="Options_Text_Choose.gif"] {
+	margin-left: 7px;
+}
+/*Large label*/
+table#options_table font.colors_productname b {
+	border-bottom: none;
+	color:#666666;
+	font-weight: 700;
+	font-size: 12px;
+	font-style: normal;
+}
+
+/*Label text color*/
+.colors_pricebox table td {
+	color: #666666;
+}
+
+/*************************************
+*   2nd PRICEBOX - Label alignment   *
+*************************************/
+
+/* Contains everything but Qty and buttons */
+#options_table {
+    padding-left: 15px;
+}
+
+/* Add spacing between table rows */
+#options_table td {
+    padding: 2px 0;
+}
+
+.vCSS_input_addtocart {
+    display: block;
+    margin: 0 auto;
+}
+
+br + .colors_pricebox td[width="1"] + td[valign="top"] br + table {width: 100%;}
+
+br + .colors_pricebox td[width="1"] + td[valign="top"] br + table > tbody > tr:first-child > td {
+    display: block;
+}
+
+/* "Add to Wish List" input */
+br + .colors_pricebox input#v65-product-wishlist-button {
+    display: block;
+    margin: 0 auto;
+}
+
+/* "Add to Registry" img */
+br + .colors_pricebox img.vCSS_img_add_to_wishlist {
+    display: block;
+    margin: 0 auto;
+}
+
+/* ------- DESCRIPTION BOX TABS --------- */
+
+/* TABS DEFAULT/UNSELECTED */
+span#Header_ProductDetail_ProductDetails_span,
+span#Header_ProductDetail_TechSpecs_span,
+span#Header_ProductDetail_ExtInfo_span,
+td#Header_ProductDetail_ProductDetails.vCSS_tab_unselected span#Header_ProductDetail_ProductDetails_span,
+td#Header_ProductDetail_TechSpecs.vCSS_tab_unselected span#Header_ProductDetail_TechSpecs_span,
+td#Header_ProductDetail_ExtInfo.vCSS_tab_unselected span#Header_ProductDetail_ExtInfo_span {
+	font: 400 14px/1.3 Arial, Helvetica, sans-serif !important;
+	padding: 8px 15px 7px;
+	display: inline-block;
+	background: #c2c2c2;
+	color: #fff;
+}
+
+/* TABS UNSELECTED HOVER */
+span#Header_ProductDetail_ProductDetails_span:hover,
+span#Header_ProductDetail_TechSpecs_span:hover,
+span#Header_ProductDetail_ExtInfo_span:hover,
+td#Header_ProductDetail_ProductDetails.vCSS_tab_unselected span#Header_ProductDetail_ProductDetails_span:hover,
+td#Header_ProductDetail_TechSpecs.vCSS_tab_unselected span#Header_ProductDetail_TechSpecs_span:hover,
+td#Header_ProductDetail_ExtInfo.vCSS_tab_unselected span#Header_ProductDetail_ExtInfo_span:hover {
+	color: #666666;
+	font-weight: bold;
+	background: #f5f5f5;
+}
+
+/* TABS SELECTED */
+td#Header_ProductDetail_ProductDetails span#Header_ProductDetail_ProductDetails_span,
+td#Header_ProductDetail_ProductDetails.vCSS_tab_selected span#Header_ProductDetail_ProductDetails_span,
+td#Header_ProductDetail_TechSpecs.vCSS_tab_selected span#Header_ProductDetail_TechSpecs_span,
+td#Header_ProductDetail_ExtInfo.vCSS_tab_selected span#Header_ProductDetail_ExtInfo_span {
+	background: #f5f5f5;
+	font-weight: bold;
+	color: #666666;
+} 
+
+/*Fix spacing*/
+tr td[background*="expand_tab_left.gif"] img {display: none;}
+tr td[background*="expand_tab_right.gif"] img {width: 7px;}
+
+
+/* ------ DESCRIPTION BOX ------ */
+
+/*Description container*/
+.colors_descriptionbox {
+	background: #f5f5f5;
+	border: none;
+	border-radius: 0;
+	padding: 10px 15px;
+}
+
+/*Text color*/
+.colors_descriptionbox table, 
+.colors_descriptionbox td {
+	color: #666;
+	font-size: 12px;
+}
+
+/*Product features box only*/
+#ProductDetail_ProductDetails_div2 .colors_descriptionbox {
+	background: #f5f5f5;
+	border: none;
+}
+
+/* ------ RELATED / ACCESSORIES ------ */
+
+/*--HEADING--*/
+
+/*Background*/
+.colors_backgroundlight {
+	background: #8c8c8c url(../images/template/stripe.png) repeat 0 0;
+	padding: 15px 0 !important;
+}
+
+/*Text*/
+.colors_lines_light font.productnamecolorSMALL.colors_productname b {
+	font-size: 18px;
+	color: #fff;
+	margin-left: 15px;
+	line-height: 1;
+	font-weight: 400;
+}
+
+/*--PRODUCT ROW--*/
+
+/*Row container*/
+td.v65-product-related-details-cell, /*Products related*/
+td.colors_background_main /*Accessories*/ {
+	border: none;
+	background: none;
+	padding: 10px 15px !important;
+}
+
+/*Product title*/
+.v65-productDisplay a.productnamecolorsmall.colors_productname {
+	font-size: 12px;
+	color: #666666;
+	font-weight: 700;
+}
+
+/*Product Price ONLY*/
+.v65-productDisplay font.pricecolorsmall.colors_productprice {
+	font-weight: 400;
+	font-size: 12px;
+	color: #666666;
+}
+
+/*Product "Our Price" text ONLY*/
+.v65-productDisplay font.smalltext.colors_text b span,
+.v65-productDisplay font.smalltext.colors_text b {
+	font-weight: 400;
+	font-size: 12px;
+	color: #666666 !important;
+}
+
+/*Center product title and price*/
+td.v65-productDisplay-cell.v65-productName,
+td.v65-productDisplay-cell.v65-productAvailability {
+	text-align: left;
+}
+
+/* ------ RECENT HISTORY ------ */
+
+table#v65-product-reviews td.v65-product-reviews-cell {
+	padding-top: 10px;
+	padding-bottom: 7px;
+}
+table#v65-product-reviews td.v65-product-reviews-cell br {display: none;}
+
+table#v65-product-reviews td.v65-product-reviews-cell td {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/* Heading container */
+#v65-product-history-header {
+	height: 50px; /*Make same as line-height of heading text below*/
+	position: relative;
+}
+
+/* Heading text */
+#v65-product-history-header td:first-child:before {
+	background: #8C8C8C url(../images/template/stripe.png) repeat 0 0;
+	color: #fff;
+	content: "Recent Items"; /*Text to be displayed*/
+	display: block;
+	font-size: 18px;
+	font-weight: normal;
+	left: 0;
+	line-height: 50px; /*Adjust height*/
+	position: absolute;
+	text-indent: 15px;
+	top: 0;
+	width: 100%;	
+}
+
+#v65-product-history-body td {
+	padding: 5px 0;
+}
+
+/*background color*/
+table#v65-product-history-body {
+	background: none;
+	padding: 0 !important;
+}
+
+/*Top and bottom border*/
+table#v65-product-history-body {
+	border-top: none;
+	border-bottom: none;
+	padding-bottom: 10px;
+}
+
+/*Product image max-width*/
+.historyitem_image img {
+	max-width: 170px; 
+} 
+
+/* PRODUCT TITLE*/
+.historyitem_productname a {
+	font-size: 12px;
+	color: #666666;
+	font-weight: 700; !important;
+}
+
+.historyitem_clearfromhistory {
+	padding-top: 5px;
+}
+
+/*PRODUCT PRICE*/
+.historyitem_productprice b font.pricecolor.colors_productprice {
+	font-weight: 400 !important;
+	font-size: 12px !important;
+	color: #666666;
+}
+
+/*--------- REVIEWS HEADING ---------*/
+
+/* Defaults to make room for heading */
+#v65-product-reviews {
+	margin-top: 25px; /*Adds spacing between Related and Reviews*/
+	padding-top: 35px; /*Make the same height as heading*/
+	position: relative;
+}
+
+/* Heading */
+#v65-product-reviews .v65-product-reviews-cell:before {
+	padding-bottom: 10px;
+	color: #666;
+	content: "Customer Reviews";
+	display: block;
+	font-size: 18px;
+	text-indent: 15px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/*--------- REVIEWS ---------*/
+
+#content_area td {
+	color: #666666;
+}
+
+#v65-product-reviews img {
+	vertical-align: middle;
+}
+
+/* Removes superfluous spacing */
+#content_area > div > br + table[width="100%"] td[width="1%"],
+#content_area > div > br + table[width="100%"] + table[width="100%"] td[width="1%"] {display: none;}
+
+/* Targets "0 of 0 people found the following revivew helpful:" */
+#content_area > div > br + table[width="100%"] td[width="1%"] + td[width="100%"] {
+	background: none;
+	padding: 6px 17px;
+	color: #fff;
+}
+
+/*"Average Customer Review" text*/
+#v65-product-reviews table > tbody > tr > td:first-child b {
+	font-size: 12px;
+	font-weight: 400;
+	color: #666;
+}
+
+/*"5 of 5" text*/
+#v65-product-reviews table > tbody > tr > td:first-child > span {
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	color: #666;
+}
+
+/*"Total Reviews" text*/
+#v65-product-reviews table > tbody > tr > td > b {
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	color: #666;
+}
+
+/*"Write A Review" text*/
+#v65-product-reviews table > tbody > tr > td > nobr a {
+	font-size: 12px;
+	font-weight: 700;
+	color: #666;
+}
+
+/* Comment Box Container */
+br + table[width="100%"] + table[width="100%"] td[width="100%"] table.colors_descriptionbox {
+	background: #f5f5f5;
+	border: none;
+	padding: 10px 15px;
+}
+
+/*COMMENT BOX text styling*/
+td[width="100%"] table.colors_descriptionbox td {
+	color: #585858;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+/* * * * * * FIXES * * * * * */
+
+/*Removes spacing before breadcrumbs*/
+form#vCSS_mainform > img, 
+form#vCSS_mainform > br,
+td.vCSS_breadcrumb_td > img + br,
+td.vCSS_breadcrumb_td > b + br,
+td.vCSS_breadcrumb_td > b + br + img {
+	display: none;
+}
+
+/*DEescription Tables*/
+#v65-product-parent > tbody > tr:first-child + tr > td[align="right"] {max-width: 400px;}
+
+/*OPTIONS TABLE*/
+#options_table tr > td:first-child br {display: none;}
+
+/*RELATED PRODUCTS/ACCESSORIES FIXES*/
+.colors_lines_light {background: none;}
+tr.v65-product-related-details-row > td, td.colors_background_main {padding: 5px;}
+table.colors_backgroundlight {display: block; margin-bottom: -1px;}
+table.colors_lines_light td.colors_backgroundlight {padding: 0;}
+
+/*HISTORY*/
+.colors_backgroundlight_dark {background: #eeeeee;}
+
+/*REVIEWS*/
+#v65-product-reviews table > tbody > tr > td:first-child {width: 270px !important;}
+#v65-product-reviews table > tbody > tr > td:first-child > span {position: static !important;}
+#v65-product-reviews table > tbody > tr > td:first-child > span > span {position: inherit !important; left: auto !important;}
+#vCSS_mainform + br {display: none;}
+
+#product_photo {
+max-width: 330px;
+}
+
+#v65-productdetail-action-wrapper td[valign="top"] {
+	vertical-align: middle;
+}
+
+.Multi-Child_Background input.vCSS_input_addtocart {margin: 0;}
+
+td #product_photo { float: none;}

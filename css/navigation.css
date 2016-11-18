@@ -1,0 +1,277 @@
+/* nav spans entire width */
+#tbl0 {
+  width: 100%;
+}
+
+/* nav is centered */
+#topNav .menu #menu0 {
+  margin: 0 auto;
+}
+
+#tbl0 td {
+	width: auto !important;
+	overflow: visible !important; 
+}
+
+/* hides bullet images */
+#topNav .menu td img,
+#leftNav .menu td img {
+  display: none !important;
+}
+#topNav .menu table,
+#leftNav .menu table {
+  margin: 0;
+  padding: 0;
+}
+/* SEPARATORS FROM MENU_POPOUT_STYLES.JS */
+#tbl0 td[id*="sep"] {
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+  /* width: 2px !important; */
+}
+/* * * * * * * * * * * * * * * * 
+ *       TOP NAV         *
+ * * * * * * * * * * * * * * * */
+/* --- POPOUT MENUS --- */
+/* top level */
+#topNav .menu td.nav a,
+#topNav .menu td.nav_hover a {
+  /* inherited by nav, nav_hover, subnav, subnav_hover */
+  font-size: 15px;
+  font-family: Arial;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 25px 10px 26px;
+  height: 22px;
+  overflow: visible !important;
+  z-index:1000;
+}
+#topNav .menu td.nav_hover a,
+#topNav .menu td.nav_selected a {
+  /* inherited by nav_hover, subnav_hover */
+  /* inherited by nav, nav_hover, subnav, subnav_hover */
+  font-size: 15px;
+  font-family: Arial;
+  text-transform: uppercase;
+  display: block;
+  color: #0052A4;
+  letter-spacing: 2px;
+  text-align: center;
+  text-decoration: none;
+  padding: 25px 10px 26px;
+  height: 22px;
+}
+/* TARGET DROPDOWNS BACKGROUND */
+#topNav .mmenucontainer + .mmenucontainer > .milonictable {
+  background-color: #fff;
+  border: 1px dotted #c8c8c8;
+  padding: 5px 0 !important;
+
+}
+
+/* sub level */
+#topNav .menu td.subnav a,
+#topNav .menu td.subnav_hover a {
+  /* inherited by subnav, subnav_hover */
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 10px;
+  padding: 5px 15px;
+  height: auto;
+  text-transform: none;
+  letter-spacing: 0;
+  text-align: left;
+  font-weight: normal;
+}
+#topNav .menu td.subnav_hover a,
+#topNav .menu td.subnav_selected a {
+  /* subnav_hover only */
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 14px;
+  padding: 5px 15px;
+  letter-spacing: 0;
+  font-weight: normal;
+}
+/* --- LIST ITEMS --- */
+#topNav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  font-family: Arial;
+  background-color: #fff;
+  font-weight: bold;
+
+}
+#topNav li {
+  display: inline-flex;
+}
+#topNav li a {
+  font-size: 15px;
+  text-transform: uppercase;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #0052A4;
+  letter-spacing: 2px;
+  padding: 25px 50px 26px;
+  height: 22px;
+  border: hidden;
+  border-radius: 25px;
+}
+#topNav li a:hover,
+#topNav li.nav_selected a {
+  color: #fff;
+  letter-spacing: 2px;
+  font-style: normal ;
+  background: #0052A4; 
+}
+
+/* * * * * * * * * * * * * * * 
+ *      LEFT NAV         * 
+ * * * * * * * * * * * * * * */
+#leftNav script + table {
+  width: 100%;
+}
+/* --- POPOUT MENUS --- */
+/* SELECT THE FIRST TABLE ONLY */
+#leftNav .menu script + div > table:first-child {
+  width: 100%;
+}
+/* top level */
+#leftNav .menu > .mmenucontainer td.nav a,
+#leftNav .menu > .mmenucontainer td.nav_hover a {
+  /* inherited by nav, nav_hover, subnav, subnav_hover */
+  font-family: "Crimson Text";
+  display: block;
+  font-size: 14px;
+  padding: 6px 4px 6px 12px;
+  text-decoration: none;
+  white-space: normal;
+  border-bottom: 1px dotted #d3d3d3 !important;
+}
+#leftNav .menu > .mmenucontainer td.nav_hover a,
+#leftNav .menu > .mmenucontainer td.nav_selected a {
+  /* inherited by nav_hover, subnav_hover */
+  border: none;
+  text-decoration: none;
+}
+/* TARGET DROPDOWNS BACKGROUND */
+#leftNav .mmenucontainer + .mmenucontainer > .milonictable {
+  background-color: #fff;
+  border: 1px dotted #d3d3d3;
+}
+/* TARGET DROPDOWNS BACKGROUND */
+/* sub level */
+#leftNav .menu > .mmenucontainer td.subnav a,
+#leftNav .menu > .mmenucontainer td.subnav_hover a {
+  /* inherited by subnav, subnav_hover */
+  border: none !important;
+
+}
+#leftNav .menu > .mmenucontainer td.subnav_hover a,
+#leftNav .menu > .mmenucontainer td.subnav_selected a {
+  /* subnav_hover only */
+
+}
+/* --- TREESMART MENUS --- */
+/* SELECT THE FIRST TABLE ONLY - SMART TREE */
+#leftNav .menu script + table {
+  width: 100%;
+}
+/* top level */
+#leftNav .menu td.nav a,
+#leftNav .menu td.nav_hover a {
+  /* inherited by nav, nav_hover, subnav, subnav_hover */
+  font-family: "Crimson Text";
+  display: block;
+  font-size: 14px;
+  padding: 6px 4px 6px 12px; 
+  text-decoration: none;
+  white-space: normal;
+  border-bottom: 1px dotted #d3d3d3 !important;
+} 
+#leftNav .menu td.nav_hover a,
+#leftNav .menu td.nav_selected a {
+  /* inherited by nav_hover, subnav_hover */
+  font-family: "Crimson Text";
+  display: block;
+  font-size: 14px;
+  padding: 6px 4px 6px 12px;
+  text-decoration: none;
+  white-space: normal;
+  border-bottom: 1px dotted #d3d3d3 !important;
+}
+/* sub level */
+#leftNav .menu td.subnav a,
+#leftNav .menu td.subnav_hover a {
+  /* inherited by subnav, subnav_hover */
+  border: none !important;
+  padding: 3px 4px 3px 26px;
+  text-decoration: none;
+}
+#leftNav .menu td.subnav_hover a,
+#leftNav .menu td.subnav_selected a {
+  /* subnav_hover only */
+  text-decoration: none;
+
+}
+/* --- LIST ITEMS --- */
+#leftNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#leftNav li {
+  white-space: normal;
+}
+#leftNav li a {
+  color: #333333;
+  font-family: "Crimson Text";
+  display: block;
+  font-size: 14px;
+  padding: 6px 4px 6px 12px;
+  border-bottom: 1px dotted #d3d3d3;
+}
+#leftNav li a:hover,
+#leftNav li.nav_selected a {
+  color: #89831c;
+  text-decoration: none;
+}
+
+#display_menu_1 .nav a {color: #000000;}
+#display_menu_1 .nav_hover a {color: #89831c;}
+#display_menu_1 .nav {background-color:transparent;}
+#display_menu_1 .nav_hover {background-color:transparent;}
+#display_menu_2 .nav a {color: #333333;}
+#display_menu_2 .nav_hover a {color: #89831c;}
+#display_menu_2 .nav {background-color:transparent;}
+#display_menu_2 .nav_hover {background-color:transparent;}
+#display_menu_3 .nav a {color: #333333;}
+#display_menu_3 .nav_hover a {color: #89831c;}
+#display_menu_3 .nav {background-color:transparent;}
+#display_menu_3 .nav_hover {background-color:transparent;}
+#display_menu_4 .nav a {color: #333333;}
+#display_menu_4 .nav_hover a {color: #89831c;}
+#display_menu_4 .nav {background-color:transparent;}
+#display_menu_4 .nav_hover {background-color:transparent;}
+#display_menu_5 .nav a {color: #333333;}
+#display_menu_5 .nav_hover a {color: #89831c;}
+#display_menu_5 .nav {background-color:transparent;}
+#display_menu_5 .nav_hover {background-color:transparent;}
+#display_menu_6 .nav a {color: #333333;}
+#display_menu_6 .nav_hover a {color: #89831c;}
+#display_menu_6 .nav {background-color:transparent;}
+#display_menu_6 .nav_hover {background-color:transparent;}
+#display_menu_7 .nav a {color: #333333;}
+#display_menu_7 .nav_hover a {color: #89831c;}
+#display_menu_7 .nav {background-color:transparent;}
+#display_menu_7 .nav_hover {background-color:transparent;}
+#display_menu_8 .nav a {color: #333333;}
+#display_menu_8 .nav_hover a {color: #89831c;}
+#display_menu_8 .nav {background-color:transparent;}
+#display_menu_8 .nav_hover {background-color:transparent;}

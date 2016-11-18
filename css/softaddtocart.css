@@ -1,0 +1,263 @@
+/* SOFT ADD TO CART */
+
+/* ------ ROUNDED CORNERS ------ */
+.soft_add_content_wrapper,
+.soft_add_action_area,
+.soft_add_header {
+	border-radius: 0 !important;
+}
+
+/* ------ ADD CUSTOM BOX-SHADOW ------ */
+
+.soft_add_wrapper {
+	background: none;
+	font-family: Arial, Helvetica, sans-serif !important;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	position: relative !important; /* Must change wrapper to position relative */
+	padding: 0;
+	z-index: 999;
+	width: 274px;
+	padding: 0;
+}
+ 
+.soft_add_header_shadow,
+.soft_add_content_shadow {
+	padding: 0;
+	background: none;
+	width:274px;
+}
+
+.soft_add_content_shadow {
+	padding-bottom:9px;
+	background: url(../images/softadd/soft-cart-bottom.png) no-repeat 0 bottom;}
+
+/* ------ HEADING ------ */
+.soft_add_header {
+	height: 41px;
+	background: url(../images/softadd/soft-add-header-tab.png) no-repeat 0 0;
+	border: none;
+	width: 274px;
+	padding: 0;
+}
+
+/* ------ CONTENT WRAPPER ------ */
+.soft_add_content_wrapper {
+	border: none; /*-------BORDERS GO HERE*/
+	width: 272px;
+	padding: 0 1px;
+	background: url(../images/softadd/soft-cart-bg.png) repeat-y 0 0 !important;
+}
+
+/* ------ PRODUCT DETAILS ------ */
+
+/*Conatiner*/
+.soft_add_content_area {
+	background-color: #fff !important;
+	max-height: none;
+	padding: 0 15px;
+	padding-top: 0;
+}
+
+/*Text*/
+.product_name, 
+.quantity, 
+#product_price {
+	color: #40382f !important;
+	font-size: 12px;
+	font-weight: normal !important;
+}
+
+/*Remove button */
+.aremove {
+	display: none;
+}
+
+/* ------ TOTALS CONTAINER ------ */
+
+/*Container*/
+.soft_add_sub_total {
+	border-top: none; /*-------BORDERS GO HERE*/
+	border-bottom: none;
+	background: none !important;
+	padding: 4px 20px 0;	/*Remove for original padding on right*/
+	font-weight: 400;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	color: #666666;
+}
+
+.sub_total {
+font-size: 12px;
+}
+
+span.sub_total_amount {
+	font-size: 20px;
+	color: #666666;
+	font-weight:700;
+}
+
+/* ------ CONTINUE SHOPPING AND CHECKOUT ------ */
+
+/*Buttons and Container */
+.soft_add_action_area {
+	padding: 15px 0 15px 0;
+	position: relative;
+	background: none;
+	border-top: none;
+	overflow: hidden;
+	height: auto;
+}
+
+/*Continue Shopping Button*/
+.continue_shopping {
+	display: none !important;
+}
+
+/*Checkout Button*/
+.check_out {
+	float: none;
+	background: url(../images/softadd/view-cart.png) 0 0 no-repeat;
+    position: static;
+    width: 113px !important;
+	height: 34px !important;
+    margin: 0 auto !important;
+    display: block;
+}
+
+/* * * * * * FIXES * * * * * */
+
+.soft_add_span {padding-left: 0;}
+.soft_add_content_area {border-bottom: none;}
+
+
+
+
+
+
+
+/*** ################ NEW SOFT ADD MODAL CHANGES ################ ***/
+
+.soft_add_span {
+	display: none;
+}
+
+
+.soft_add_header .close_btn {
+	display: none;
+}
+
+.number_of_items {
+	display: none;
+}
+
+.soft_add_action_area {
+	clear:both;
+}
+
+.soft_add_wrapper.anchored {
+	z-index: 1 !important;
+	top: -14px !important;
+	left: -224px !important;
+}
+
+
+/*Product Row Layout*/
+ul.anchored-cart {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: table;
+	width: 100%;
+}
+
+ul.anchored-cart li img {
+	max-width: 55px;
+}
+
+ul.anchored-cart li {
+	text-align: left;
+	vertical-align: middle;
+	display: table-row;
+	width: auto;
+	margin: 0;
+}
+
+ul.anchored-cart li div {
+	width: 100%;
+	font-size: 11px;
+}
+
+ul.anchored-cart li .product-image {
+	display: table-cell;
+	padding: 10px;
+	padding-right: 4px;
+}
+
+ul.anchored-cart li .product-detail {
+	display: table-cell;
+	padding:  10px 14px;
+	vertical-align: middle;
+	line-height: 14px;
+}
+
+ul.anchored-cart li .product-name {
+	display: block;
+}
+
+ul.anchored-cart li .product-name a {
+	color: #666666;
+	font-weight: 400;
+	font-size: 12px;
+}
+ul.anchored-cart li .product-qty {
+	display: block;
+	font-size: 12px;
+	color: #666666 !important;
+}
+
+ul.anchored-cart li .product-options a {
+	color: #666666 !important;
+}
+
+ul.anchored-cart li .product-qty .quantity_text {
+	display: inline;
+	font-size: 12px;
+	color: #666666 !important;
+}
+
+ul.anchored-cart li .product-price {
+	display: table-cell;
+	padding: 10px 8px 10px 0;
+	font-size: 12px;
+	vertical-align: middle;
+	text-align: right;
+	color: #666666;
+}
+
+
+ul.anchored-cart li .product-remove {
+	display: none;
+}
+
+ul.anchored-cart {
+	border-collapse: collapse;
+}
+
+
+ul.anchored-cart li {
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+
+ul.anchored-cart li.recently-added {
+     background-color: #f5f5f5;
+}
+
+
+ul.anchored-cart li .product-image {
+	width: 55px;
+	overflow: hidden;
+	float: left;
+}

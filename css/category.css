@@ -1,0 +1,71 @@
+/* CATEGORY PAGE CSS */
+
+/**************************
+*       BREADCRUMBS       *
+**************************/
+
+#content_area #divWaitModal + table > tbody > tr:first-child b a {
+	color: #666666;
+	font-weight: 400 !important;
+	font-size: 14px !important;
+}
+
+#content_area #divWaitModal + table > tbody > tr:first-child b {
+	color:#666666;
+	font-weight: 400 !important;
+	font-size: 14px !important;
+}
+/**************************
+*      SUB CAT TABLE      *
+**************************/
+
+.colors_backgroundneutral {
+	background: #fff;
+	border: none;
+	border-radius: 0px;
+}
+
+/*--------- HEADING ---------*/
+
+/*Background*/
+table.colors_backgroundlight {
+	background: none;
+	width: 100%;
+	border-bottom: 1px solid #dedede;
+}
+
+/*Text*/
+table.colors_backgroundlight b {
+	font-size: 24px;
+	font-weight: 700;
+	color:#666;
+	padding-left: 0;
+	line-height: 43px;
+}
+
+
+/*--------- LINKS ---------*/
+a.subcategory_link {
+	color: #666;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+a.subcategory_link:hover {
+	color: #8d812e;
+	text-decoration: none;
+}
+
+/* * * * * * FIXES * * * * * */
+
+/*HEADING*/
+table.colors_backgroundlight > tbody > tr > td > img {display: none;} /*heading images*/
+
+/*Lines below heading*/
+.colors_lines_light, .colors_lines_light + .colors_backgroundneutral {display: none;}
+
+/* Sort by alignment */
+form#MainForm > input[name="Cat"] + table td[valign="bottom"][rowspan="2"] {
+    vertical-align: top;
+    padding-top: 6px;
+}

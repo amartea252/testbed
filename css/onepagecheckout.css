@@ -1,0 +1,200 @@
+/*--- PAGE HEADING ---*/
+h2#v65-onepage-header {
+	margin: 10px 0 10px 5px;
+	font-size: 28px;
+	font-weight: bold;
+	color:#666666;
+}
+
+/*--- LABEL TEXT ---*/
+td#v65-onepage-ordercomments-value, /*Comments label*/
+table#v65-onepage-ContentTable td, /*Label*/
+table#v65-onepage-ContentTable td font /*Asterisk*/ {
+	color: #666666;
+}
+
+/*--- INPUTS AND SELECTS ---*/
+table#v65-onepage-Detail td input,
+table#v65-onepage-Detail td select {
+	background: #FFF !important;
+	border: 1px solid #dbdbdb !important;
+	color:#666666;
+}
+
+/*--- TABLE CHECKOUT SUMMARY ---*/
+
+/*Heading background-color*/
+#v65-onepage-cartsummary-header {	
+	background: #8c8c8c url(../images/template/stripe.png) repeat 0 0 !important;
+}
+
+/*Order summary table background color*/
+#table_checkout_cart0,
+#v65-onepage-CartSummary {
+	background: #ffffff url(../images/template/your-cart-bg.png) repeat-y 0 0;
+}
+
+#v65-onepage-ordersummary-items {
+	background: none !important;
+}
+
+/*Heading text*/
+#v65-onepage-cartsummary-label {
+	font-size: 15px !important;
+	font-weight: 400 !important;
+	color: #FFF;
+	padding-left: 15px !important;
+}
+
+/*--- CART DETAILS ---*/
+
+#v65-onepage-ordersummary-items td, /*Items, qty, total text*/
+b.v65-onepage-shippingcost-label /*shipping, tax, subtotal text*/ {
+	font-weight: 400 !important;
+	font-size: 12px !important;
+	color: #666 !important;
+}
+
+/*Items, qty, total titles*/ 
+#v65-onepage-ordersummary-header-row td {
+	color: #3b3b3b !important;
+	font-weight: 500 !important;
+	text-transform: uppercase;
+}
+
+b.v65-onepage-shippingcost-amount, /*Subtotal boldness*/
+#v65-onepage-ShippingCostDetails .carttext /*Shipping & handling and tax price colors*/ {
+	color: #666 !important;
+	font-weight: 400 !important;
+}
+
+/*Border above total*/
+#v65-onepage-summary-total-line, 
+.v65-onepage-summary-total-line-cell {
+	border-bottom: 1px solid #dadada !important;
+}
+
+/*Total text*/
+span#TotalsTotalTD {
+	color: #333;
+	font-size: 24px !important;
+	font-weight: 600 !important;
+}
+
+/*Gift card text*/
+td#v65-apply-gift-newCell a[style="color:#0000CC;font-weight:bold;"] {
+	color: #3b3b3b !important;
+	font-size: 12px !important;
+	font-weight: normal !important;
+}
+
+/*Textarea border and background*/
+textarea#v65-onepage-ordercomments-input {
+	border: 1px solid #d5d5d5 !important;
+	background: #FFF !important;
+}
+
+/*--- CART DETAILS BORDERS ---*/
+
+/*Border bottom*/
+#table_checkout_cart0 tr#v65-cart-button-submit-row > td {
+	border-bottom: 5px solid #dadada;
+}
+
+#v65-onepage-editcart {font-weight: 600 !important;}
+
+/*Border left and right*/
+#table_checkout_cart0 > tbody > tr > td {
+	border-left: none;
+    border-right: none;
+}
+#loginModal .loginMessage, #loginModal .forgotPasswordMessage, 
+#loginModal .loginTitle, #loginModal .forgotPasswordTitle {
+	color: #666;
+}
+
+/*Edits border for Heading ONLY*/
+#table_checkout_cart0 > tbody > tr:first-child > td {border: none;}
+
+/* * * * * * FIXES * * * * * */
+/*REMOVES BORDERS FROM RADIO BUTTONS*/
+table#v65-onepage-Detail td input[type=radio] {border:none !important; background: none !important;}
+#table_checkout_cart0 {margin-top: 5px !important;}
+
+#content_area .loginHeaderWrapper {
+	font-size: 12px;
+}
+
+#content_area .loginHeaderWrapper a {
+	color: #ec845f;
+}
+
+#content_area {
+	width: 926px !important;
+}
+
+#leftNav {
+	display: none !important;
+}
+
+
+
+
+/* Container for Subtotal, Shipping, Tax */
+#content_area #TotalsDivContainer {float: none;}
+
+/* Shipping Information label alignment */
+td#v65-onepage-ShippingParent {padding-left: 0 !important;}
+#v65-onepage-Shipping td.v65-onepage-shipping-label-cell div {text-align: right !important;}
+#v65-onepage-Shipping td.v65-onepage-shipping-label-cell {width: 105px;}
+#ship-to-options-table div[align="right"] {text-align: right;}
+
+/* "My Saved Billing Addresses" */
+#v65-onepage-saved-billing-table font[style*="font-weight: bold;"] {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: normal !important;
+	line-height: 14px !important;
+	padding-right: 2px;
+	text-align: right;
+	vertical-align: top;
+	width: 91px;
+}
+
+/* "My Saved Billing Addresses" select */
+select[onchange*="Choose_My_Saved_Billing"] {width: 175px;}
+
+/* Credit Cart label and input alignment */
+#content_area td.v65-payment-details-label-cell[width="39%"] {width: 105px;}
+
+#content_area #savedPayment,
+#content_area td.v65-payment-details-label-cell[width="39%"] + td[width="61%"] {
+	width: auto;
+}
+
+table#v65-onepage-registration td {white-space: nowrap;}
+
+/* Override width and margin for left side container */
+#content_area #v65-onepage-ContentTable {
+	margin: 0;
+	border-spacing: 0;
+}
+
+/* Heading image */
+.v65-onepage-headerShort img {display: block;}
+
+/* Cart Summary redundant bkg colors */
+#table_checkout_cart0 #v65-onepage-CartSummary,
+#table_checkout_cart0 #v65-onepage-ordersummary-items {background: none;}
+
+
+/* --- Gives Shipping Drop-Down Static Width and Aligns with Rest of Inputs --- */
+#v65-onepage-ShippingCostHeader + tr,
+#v65-onepage-ShippingCostHeader + tr > td:first-child {display: block;}
+#v65-onepage-ShippingCostHeader + tr > td:first-child div[align="center"] {text-align: left;}
+#ship-to-options-table td[style] {padding: 5px 0;}
+#DisplayShippingSpeedChoicesTD select {
+    padding: 6px 4px;
+    width: 172px;
+    margin-left: 107px;
+}
